@@ -13,6 +13,7 @@ import HeaderSection from "@/components/header"
 import HeroSection from "@/components/heroSection"
 import { useLoading } from "@/components/context/loading-context"
 import { useEffect } from "react"
+import WhatsAppFloatingButton from "@/components/whatsapp-floating"
 export default function ServicesPage() {
   const { startLoading, stopLoading } = useLoading()
   

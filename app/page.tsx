@@ -8,7 +8,6 @@ import { Footer } from "react-day-picker"
 import HeaderSection from "@/components/header"
 import WhatsAppFloatingButton from "@/components/whatsapp-floating"
 import HeroSection from "@/components/heroSection"
-
 const getInitials = (name: string) => {
   return name.split(' ').map((n: string) => n[0]).join('').toUpperCase().slice(0, 2);
 };
@@ -28,39 +27,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-white/95 backdrop-blur-sm border-b border-gray-100 sticky top-0 z-50">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3 group">
-              <img src="/logo.jpg" alt="Sooryathejus Group Logo" className="w-15 h-14 object-contain" />
-              <span className="text-xl font-semibold text-gray-900">Sooryathejus Group</span>
-            </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-emerald-600 font-medium text-sm">
-                Home
-              </Link>
-              <Link
-                href="/digital-marketing"
-                className="text-gray-600 hover:text-emerald-600 transition-colors text-sm"
-              >
-                Digital Marketing
-              </Link>
-              <Link href="/real-estate" className="text-gray-600 hover:text-emerald-600 transition-colors text-sm">
-                Real Estate
-              </Link>
-              <Link href="/services" className="text-gray-600 hover:text-emerald-600 transition-colors text-sm">
-                Services
-              </Link>
-              <Link href="/contact" className="text-gray-600 hover:text-emerald-600 transition-colors text-sm">
-                Contact
-              </Link>
-            </div>
-            <Button className="bg-emerald-600 hover:bg-emerald-700 text-white text-sm px-6 py-2 rounded-md">
-              Get Started
-            </Button>
-          </div>
-        </div>
-      </nav>
+      <HeaderSection />
 
       {/* Hero Section */}
       <HeroSection

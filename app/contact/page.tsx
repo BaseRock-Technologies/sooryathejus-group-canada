@@ -76,21 +76,21 @@ const [loading, setLoading] = useState(false);
   return (
     <div className="min-h-screen bg-white">
       <HeaderSection />
-<ToastContainer position="top-right" autoClose={3000} />
+      <ToastContainer position="top-right" autoClose={3000} />
 
 
 
       {/* Hero Section */}
-   <section className="pt-16 pb-24 px-6">
-  <div className="container mx-auto text-center max-w-4xl">
-    <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-      Get in touch with <span className="text-emerald-600">Our Experts</span>
-    </h1>
-    <p className="text-xl text-gray-600 mb-10">
-      Ready to take your business to the next level?<br></br> Contact our team of experts and let's discuss how we can help you achieve your goals.
-    </p>
-  </div>
-</section>
+      <section className="py-24 px-6">
+        <div className="container mx-auto text-center max-w-4xl">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+            Get in touch with <span className="text-emerald-600">Our Experts</span>
+          </h1>
+          <p className="text-xl text-gray-600 mb-10">
+            Ready to take your business to the next level?<br></br> Contact our team of experts and let's discuss how we can help you achieve your goals.
+          </p>
+        </div>
+      </section>
 
 
       {/* Contact Section */}
